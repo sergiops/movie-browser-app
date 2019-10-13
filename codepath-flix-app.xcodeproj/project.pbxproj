@@ -9,21 +9,21 @@
 /* Begin PBXBuildFile section */
 		8AA805A12353A11C005584EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA805A02353A11C005584EF /* AppDelegate.swift */; };
 		8AA805A32353A11C005584EF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA805A22353A11C005584EF /* SceneDelegate.swift */; };
-		8AA805A52353A11C005584EF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA805A42353A11C005584EF /* ViewController.swift */; };
 		8AA805A82353A11C005584EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AA805A62353A11C005584EF /* Main.storyboard */; };
 		8AA805AA2353A11E005584EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AA805A92353A11E005584EF /* Assets.xcassets */; };
 		8AA805AD2353A11E005584EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AA805AB2353A11E005584EF /* LaunchScreen.storyboard */; };
+		8AA805B52353C36B005584EF /* MovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA805B42353C36B005584EF /* MovieViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8AA8059D2353A11C005584EF /* codepath-flix-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "codepath-flix-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AA805A02353A11C005584EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8AA805A22353A11C005584EF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8AA805A42353A11C005584EF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8AA805A72353A11C005584EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8AA805A92353A11E005584EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8AA805AC2353A11E005584EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8AA805AE2353A11E005584EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8AA805B42353C36B005584EF /* MovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +56,9 @@
 		8AA8059F2353A11C005584EF /* codepath-flix-app */ = {
 			isa = PBXGroup;
 			children = (
+				8AA805B42353C36B005584EF /* MovieViewController.swift */,
 				8AA805A02353A11C005584EF /* AppDelegate.swift */,
 				8AA805A22353A11C005584EF /* SceneDelegate.swift */,
-				8AA805A42353A11C005584EF /* ViewController.swift */,
 				8AA805A62353A11C005584EF /* Main.storyboard */,
 				8AA805A92353A11E005584EF /* Assets.xcassets */,
 				8AA805AB2353A11E005584EF /* LaunchScreen.storyboard */,
@@ -138,9 +138,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8AA805A52353A11C005584EF /* ViewController.swift in Sources */,
 				8AA805A12353A11C005584EF /* AppDelegate.swift in Sources */,
 				8AA805A32353A11C005584EF /* SceneDelegate.swift in Sources */,
+				8AA805B52353C36B005584EF /* MovieViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
