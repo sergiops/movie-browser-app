@@ -11,6 +11,7 @@ import AlamofireImage
 
 class MovieViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
+    // MARK: - Properties
     var movies = [[String:Any]]()
     @IBOutlet weak var table: UITableView!
     
@@ -32,7 +33,7 @@ class MovieViewController: UIViewController, UITableViewDataSource, UITableViewD
         cell.movieTitle.text = (movie["title"] as! String)
         cell.movieSynopsis.text = (movie["overview"] as! String)
         
-        let baseUrl = "https://image.tmdb.org/t/p/w154"
+        let baseUrl = "https://image.tmdb.org/t/p/w185"
         let posterPath = movie["poster_path"] as! String
         let posterUrl = URL(string: baseUrl + posterPath)
         cell.moviePoster.af_setImage(withURL: posterUrl!)
@@ -59,5 +60,5 @@ class MovieViewController: UIViewController, UITableViewDataSource, UITableViewD
         }
         task.resume()
     }
-
+    
 }
