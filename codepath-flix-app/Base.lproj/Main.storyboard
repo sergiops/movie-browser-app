@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="175" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" contentViewInsetsToSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rvD-2n-09x">
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MovieCell" rowHeight="175" id="lmG-RQ-PKi" customClass="MovieCell" customModule="codepath_flix_app" customModuleProvider="target">
@@ -43,7 +43,6 @@
                                                 </label>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Cau-ZC-Fbr">
                                                     <rect key="frame" x="10" y="9.5" width="125" height="156"/>
-                                                    <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="Cau-ZC-Fbr" secondAttribute="height" multiplier="4:5" id="HYs-NC-aJe"/>
                                                         <constraint firstAttribute="width" constant="125" id="Iz8-hN-OaI"/>
@@ -73,10 +72,10 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstAttribute="bottom" secondItem="rvD-2n-09x" secondAttribute="bottom" id="DUP-DL-Luy"/>
                             <constraint firstItem="rvD-2n-09x" firstAttribute="leading" secondItem="OiX-07-xOF" secondAttribute="leading" id="cPY-na-x3W"/>
-                            <constraint firstItem="OiX-07-xOF" firstAttribute="bottom" secondItem="rvD-2n-09x" secondAttribute="bottom" id="f0U-MK-dMX"/>
                             <constraint firstItem="OiX-07-xOF" firstAttribute="trailing" secondItem="rvD-2n-09x" secondAttribute="trailing" id="nwU-7V-IRd"/>
-                            <constraint firstItem="rvD-2n-09x" firstAttribute="top" secondItem="OiX-07-xOF" secondAttribute="top" id="sMX-gg-op1"/>
+                            <constraint firstItem="rvD-2n-09x" firstAttribute="top" secondItem="n2f-2Z-Cqt" secondAttribute="top" id="t65-6N-pFe"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="OiX-07-xOF"/>
                     </view>

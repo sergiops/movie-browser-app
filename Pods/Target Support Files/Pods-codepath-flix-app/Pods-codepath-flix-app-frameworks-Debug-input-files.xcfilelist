@@ -1,0 +1,3 @@
+${PODS_ROOT}/Target Support Files/Pods-codepath-flix-app/Pods-codepath-flix-app-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
+${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework
