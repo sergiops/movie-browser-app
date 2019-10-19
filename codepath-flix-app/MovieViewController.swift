@@ -31,7 +31,10 @@ class MovieViewController: UIViewController, UITableViewDataSource, UITableViewD
         let cell = tableView.dequeueReusableCell(withIdentifier: "MovieCell") as! MovieCell
         let movie = movies[indexPath.row]
         cell.movieTitle.text = (movie["title"] as! String)
-        cell.movieSynopsis.text = (movie["overview"] as! String)
+        cell.releaseDate.text = (movie["release_date"] as! String)
+        let movieRating = movie["vote_average"] as! Double
+        cell.userRating.text = String(movieRating) + "/10"
+        //cell.movieSynopsis.text = (movie["overview"] as! String)
         
         let baseUrl = "https://image.tmdb.org/t/p/w185"
         let posterPath = movie["poster_path"] as! String
