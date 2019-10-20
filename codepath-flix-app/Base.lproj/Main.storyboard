@@ -99,12 +99,57 @@
                     </view>
                     <navigationItem key="navigationItem" title="Movies" id="DWL-3d-nNm"/>
                     <connections>
-                        <outlet property="table" destination="rvD-2n-09x" id="5pa-fa-WwE"/>
+                        <outlet property="navigationTitle" destination="DWL-3d-nNm" id="Spg-9f-JXo"/>
+                        <outlet property="table" destination="rvD-2n-09x" id="Y6r-18-mXz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="srP-sk-B9s" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1671" y="1547"/>
+            <point key="canvasLocation" x="1670" y="2334"/>
+        </scene>
+        <!--Genres-->
+        <scene sceneID="pHF-c6-obd">
+            <objects>
+                <viewController id="LlY-x1-daW" customClass="GenreViewController" customModule="codepath_flix_app" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Bcx-QC-4wr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="aj4-rr-TQ0">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="GenreCell" id="HQY-Yp-gHo" customClass="GenreCell" customModule="codepath_flix_app" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="HQY-Yp-gHo" id="qnn-iu-5nw">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="PVn-d3-aB7" kind="show" id="zJP-Xy-mDJ"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="aj4-rr-TQ0" firstAttribute="top" secondItem="Bcx-QC-4wr" secondAttribute="top" id="OFb-tB-4CV"/>
+                            <constraint firstAttribute="bottom" secondItem="aj4-rr-TQ0" secondAttribute="bottom" id="gzw-88-GJG"/>
+                            <constraint firstItem="aj4-rr-TQ0" firstAttribute="trailing" secondItem="aik-mN-55y" secondAttribute="trailing" id="uPG-Dg-leF"/>
+                            <constraint firstItem="aj4-rr-TQ0" firstAttribute="leading" secondItem="aik-mN-55y" secondAttribute="leading" id="wtl-zB-IGT"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="aik-mN-55y"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Genres" id="44o-Jr-ZNY"/>
+                    <connections>
+                        <outlet property="table" destination="aj4-rr-TQ0" id="bLZ-Gd-g3Y"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6pY-TZ-eOR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1670" y="1562"/>
         </scene>
         <!--Movie Details View Controller-->
         <scene sceneID="ybs-Y4-Ktz">
@@ -228,7 +273,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7X9-Wv-lUp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1671" y="2313"/>
+            <point key="canvasLocation" x="1670" y="3266"/>
         </scene>
         <!--Browse-->
         <scene sceneID="iA6-7f-Wlt">
@@ -242,12 +287,12 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="PVn-d3-aB7" kind="relationship" relationship="rootViewController" id="WOE-g0-gpq"/>
+                        <segue destination="LlY-x1-daW" kind="relationship" relationship="rootViewController" id="wKA-qu-CZO"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a1h-Ro-V8g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1672" y="814"/>
+            <point key="canvasLocation" x="1670" y="843"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="ZJO-A8-I4m">
@@ -255,6 +300,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="3Zt-fB-FXd" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="R3W-KM-viX">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
