@@ -19,7 +19,7 @@ class MovieViewController: UIViewController, UITableViewDataSource, UITableViewD
         super.viewDidLoad()
         table.delegate = self
         table.dataSource = self
-        getMovies()
+        self.getMovies()
     }
     
     // MARK: - TableView Methods
@@ -34,7 +34,6 @@ class MovieViewController: UIViewController, UITableViewDataSource, UITableViewD
         cell.releaseDate.text = (movie["release_date"] as! String)
         let movieRating = movie["vote_average"] as! Double
         cell.userRating.text = String(movieRating) + "/10"
-        //cell.movieSynopsis.text = (movie["overview"] as! String)
         
         let baseUrl = "https://image.tmdb.org/t/p/w185"
         let posterPath = movie["poster_path"] as! String
@@ -43,9 +42,20 @@ class MovieViewController: UIViewController, UITableViewDataSource, UITableViewD
         return cell
     }
     
+    // MARK: - Navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let cell = sender as! UITableViewCell
+        let indexPath = table.indexPath(for: cell)!
+        let activeMovie = self.movies[indexPath.row]
+        
+        let detailsViewController = segue.destination as! MovieDetailsViewController
+        detailsViewController.movie = activeMovie
+        table.deselectRow(at: indexPath, animated: true)
+    }
+    
     // MARK: - Private Network Calls
     private func getMovies() {
-        let url = URL(string: "https://api.themoviedb.org/3/movie/now_playing?api_key=a07e22bc18f5cb106bfe4cc1f83ad8ed")!
+        let url = URL(string: "https://api.themoviedb.org/3/movie/297762/similar?api_key=a07e22bc18f5cb106bfe4cc1f83ad8ed")!
         let request = URLRequest(url: url,
                                  cachePolicy: .reloadIgnoringLocalCacheData,
                                  timeoutInterval: 10)
