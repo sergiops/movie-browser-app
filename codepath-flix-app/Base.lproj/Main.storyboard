@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Movies-->
+        <!--Selected Genre-->
         <scene sceneID="aA7-b8-Hba">
             <objects>
-                <viewController id="PVn-d3-aB7" customClass="MovieViewController" customModule="codepath_flix_app" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Selected Genre" id="PVn-d3-aB7" customClass="MovieViewController" customModule="codepath_flix_app" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="n2f-2Z-Cqt">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -97,7 +97,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="OiX-07-xOF"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Movies" id="DWL-3d-nNm"/>
+                    <navigationItem key="navigationItem" title="Genre Result" id="DWL-3d-nNm"/>
                     <connections>
                         <outlet property="navigationTitle" destination="DWL-3d-nNm" id="Spg-9f-JXo"/>
                         <outlet property="table" destination="rvD-2n-09x" id="Y6r-18-mXz"/>
@@ -107,10 +107,10 @@
             </objects>
             <point key="canvasLocation" x="1670" y="2334"/>
         </scene>
-        <!--Genres-->
+        <!--Genres Table-->
         <scene sceneID="pHF-c6-obd">
             <objects>
-                <viewController id="LlY-x1-daW" customClass="GenreViewController" customModule="codepath_flix_app" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Genres Table" id="LlY-x1-daW" customClass="GenreViewController" customModule="codepath_flix_app" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Bcx-QC-4wr">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -273,7 +273,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7X9-Wv-lUp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1670" y="3266"/>
+            <point key="canvasLocation" x="319" y="3065"/>
         </scene>
         <!--Browse-->
         <scene sceneID="iA6-7f-Wlt">
@@ -313,10 +313,10 @@
             </objects>
             <point key="canvasLocation" x="982.60869565217399" y="83.705357142857139"/>
         </scene>
-        <!--Now Playing-->
+        <!--Now Playing Results-->
         <scene sceneID="rMc-eh-YZ5">
             <objects>
-                <viewController id="ed7-kZ-PNL" customClass="MovieGridViewController" customModule="codepath_flix_app" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Now Playing Results" id="ed7-kZ-PNL" customClass="MovieGridViewController" customModule="codepath_flix_app" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ael-vf-BKR">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -383,10 +383,10 @@
             </objects>
             <point key="canvasLocation" x="320" y="1547"/>
         </scene>
-        <!--Movies-->
+        <!--Now Playing-->
         <scene sceneID="j2q-Fw-u9J">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="WYy-3P-AI8" sceneMemberID="viewController">
+                <navigationController title="Now Playing" automaticallyAdjustsScrollViewInsets="NO" id="WYy-3P-AI8" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Movies" image="film" catalog="system" id="dAQ-YZ-aZu"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="kvF-mA-xhd">
@@ -409,6 +409,6 @@
         <image name="list.dash" catalog="system" width="64" height="44"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="U5B-o0-oRS"/>
+        <segue reference="vTh-0r-x79"/>
     </inferredMetricsTieBreakers>
 </document>
